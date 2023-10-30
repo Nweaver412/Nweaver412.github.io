@@ -1,44 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
+<!--
+Designed by Jess Lin
+-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Nate Weaver - Personal Website</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendor/academicons-1.8.6/css/academicons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Nate Weaver</h1>
-        <p>Web Developer</p>
-    </header>
+  <div class="page">
+    <nav>
+      <ul class="site-nav">
+        <li><a href="./index.html">Home / Projects</a></li>
+        <!--
+          <li><a href="./personal.html">Personal</a></li>
+        -->
+      </ul>
+    </nav>
 
-    <div class="container" id="about">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>Third year computer science student at The University of Colorado Boulder, 
-                driven by a love for data and a fascination with the math behind it. 
-                I am especially interested in the intersect between data and linear algebra and its applications to modern technology such as AI. 
-                Apart from that, I am also heavily interested in problem solving with algorithms and logic, as well as philosophy. 
-                Outside of university, I am an avid coffee enjoyer, rock climber, and cyclist!</p>
+    <div class="main-wrapper">
+      <div class="main-content">
+
+        <div class="intro-side">
+          <img src="assets/colin.jpg" />
         </div>
+
+        <header class="intro-main">
+          <h1>Colin White</h1>
+          <div class="contact">
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/nweaver412" target="_blank" class="fa fa-linkedin"></a>
+              <a href="https://github.com/nweaver412" target="_blank" class="fa fa-github"></a>
+              <a href="https://twitter.com/nateweaver_cs" target="_blank" class="fa fa-twitter"></a>      
+              <a href="assets/nate_resume.pdf" target="_blank" class="ai ai-cv"></a>                      
+            </div>
+            <span class="email">nathan.weaver AT colorado DOT edu</span>
+          </div>
+        </header>
+
+        <div class="spacer"></div>
+
+        <div class="bio-side">
+          <h2>About</h2>
+        </div>
+
+        <div class="bio-main text">
+          <p>I design algorithms that create advanced AI algorithms.</p>
+          <p>
+            I am a postdoc at Caltech in the 
+            <a href="https://www.cms.caltech.edu/" target="_blank">Computing + Mathematical Sciences (CMS) Department</a>, 
+            working with 
+            <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Anima Anandkumar</a>.
+            Before that, I was Head of Research at
+            <a href="https://abacus.ai/" target="_blank">Abacus.AI</a>.
+            I graduated from Carnegie Mellon University with a Ph.D. in computer science, advised by
+            <a href="https://www.cs.cmu.edu/~ninamf/" target="_blank">Nina Balcan</a> and supported by the 
+            <a href="https://ndseg.asee.org/" target="_blank">NDSEG Fellowship</a>.
+            I received my undergraduate degree from Amherst College.
+          </p>
+          <p class="cv">For more, see <a href="assets/colin_resume.pdf" target="_blank">my CV</a> (last updated Apr. 2023).</p>
+          <p>
+            My work focuses on automating the search for high-performing deep learning models, 
+            as well as explaining and de-biasing them, from both a theoretical and empirical lens. 
+            Much of my work involves designing innovative methods by drawing insights from large-scale studies
+          </p>
+        </div>
+
+
+        <div class="news-side">
+          <h2>News</h2>
+        </div>
+
+        <div class="news-main text">
+          <ul>
+            <!--
+            <li>
+              <b style="background-color: #ffce00">Outstanding reviewer award</b> at NeurIPS 2021.
+            </li>
+          -->
+            <li>
+              <ul>
+                <li>
+                  &bull; Apr 17, 2023: I started as a postdoc at Caltech!
+                </li>
+                <li>
+                  &bull; Jan 25, 2023: I gave a talk at UC Berkeley.
+                  My slides are <a href="assets/slides/berkeley_talk_2023.pdf" target="_blank">here</a>.
+                </li>
+                <li>
+                  &bull; Jan 22, 2023: <a href="https://arxiv.org/abs/2301.08727" target="_blank">New survey</a> on neural architecture search. Email me if you have comments!
+                </li>                
+                <li>
+                  &bull; Dec 1, 2022: I am a Program Chair for <a href="https://automl.cc/" target="_blank">AutoML 2023</a> in Potsdam/Berlin, Germany. 
+                  Submit your paper by March 23, 2023!
+                </li>
+                <li>
+                  &bull; Aug 17, 2022: I gave a talk at Microsoft Research. See the slides <a href="assets/slides/msr_talk_2022.pdf" target="_blank">here</a>.
+                </li>
+                <li>
+                  &bull; Jul 25, 2022: I gave a tutorial on neural architecture search with 
+                  <a href="https://www.debadeepta.com/" target="_blank">Debadeepta Dey</a>, 
+                  at <a href="https://automl.cc/" target="_blank">AutoML 2022</a>. 
+                  View the talk <a href="https://www.youtube.com/watch?v=t2J3KkaMZe4" target="_blank">here</a>, 
+                  and the slides <a href="assets/slides/nas_tutorial_2022.pdf" target="_blank">here</a>.
+                </li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="experience-side">
+          <h2>Experience</h2>
+        </div>
+
+        <div class="experience-main text">
+          <ul>
+
+            <li>
+              <span class="title" style="color:#155644"><b>Speeding up Fourier Neural Operators via Mixed Precision</b></span>
+              <span>
+                Colin White*,
+                <a href="https://rtu715.github.io/" target="_blank">Renbo Tu*</a>,
+                <a href="https://jeankossaifi.com/" target="_blank">Jean Kossaifi</a>,
+                <a href="https://www.cs.toronto.edu/~pekhimenko/" target="_blank">Gennady Pekhimenko</a>,
+                <a href="https://kamyar.page/" target="_blank">Kamyar Azizzadenesheli</a>,
+                <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Anima Anandkumar</a>
+              </span>
+              <span>SynS-ML Workshop at ICML 2023.</span>
+              <span>
+                <a href="https://arxiv.org/abs/2307.15034" target="_blank">[paper]</a>
+                <a href="https://github.com/neuraloperator/neuraloperator" target="_blank">[code]</a>
+              </span>
+            </li>
+            <li>
+                <span class="title" style="color:#155644"><b>Neural Architecture Search: Insights from 1000 Papers</b></span>
+                <span>
+                  Colin White,
+                  <a href="https://ml.informatik.uni-freiburg.de/profile/safari/" target="_blank">Mahmoud Safari</a>,
+                  <a href="https://rheasukthanker.github.io/" target="_blank">Rhea Sukthanker</a>,
+                  <a href="https://rubinxin.github.io/" target="_blank">Binxin Ru</a>,
+                  <a href="https://ml.informatik.uni-freiburg.de/profile/elsken/" target="_blank">Thomas Elsken</a>,
+                  <a href="https://ml.informatik.uni-freiburg.de/people/zela/" target="_blank">Arber Zela</a>,                
+                  <a href="https://www.debadeepta.com/" target="_blank">Debadeepta Dey</a>,
+                  <a href="http://aad.informatik.uni-freiburg.de/people/hutter/" target="_blank">Frank Hutter</a>
+                </span>
+                <span>Preprint.</span>
+                <span>
+                  <a href="https://arxiv.org/abs/2301.08727" target="_blank">[paper]</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+      </div>
     </div>
 
-    <div class="container" id="portfolio">
-        <div class="content">
-            <h2>Portfolio</h2>
-            
-        </div>
-    </div>
+  </div>
 
-    <div class="container" id="contact">
-        <div class="content">
-            <h2>Contact Me</h2>
-            <p>You can reach me at <a href="mailto:nawe1887@colorado.edu">nawe1887@colorado.edu</a>.</p>
-        </div>
-    </div>
 
-    <footer>
-        &copy; 2023 Nate Weaver
-    </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58662543-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
 </body>
 </html>
+
+
