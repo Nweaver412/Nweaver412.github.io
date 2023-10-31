@@ -374,3 +374,27 @@ nav {
 .service-main li + li {
   margin-top: 0.25em;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+ }
+ 
+ .video {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+ }
+ 
+ .video img {
+  width: 100%;
+  height: auto;
+ }
+ 
+ @media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ }
