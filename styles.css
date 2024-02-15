@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: #e3e4e6;
+  background-color: #102f6e;
   font-family: 'Inter', sans-serif;
   letter-spacing: -0.004em;
   margin: 0;
@@ -42,7 +42,7 @@ body {
 nav {
   width: 100%;
 
-  background-color: #101010;
+  background-color: #000000;
 
   display: flex;
   justify-content: center;
@@ -232,6 +232,7 @@ nav {
 .intro-side img {
   border-radius: 50%;
   width: var(--photo-width);
+
 }
 
 .intro-main {
@@ -241,6 +242,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid #ffffff; 
 }
 
 .intro-main h1 {
@@ -261,6 +263,7 @@ nav {
 .intro-main .social-links {
   display: inline-block;
   margin-right: var(--social-links-margin-right);
+  /* border: 1px solid #837a7a;  */
 }
 
 .intro-main .email {
@@ -268,6 +271,8 @@ nav {
   margin-top: 1em;
   font-size: 1rem;
   font-family: monospace;
+  border: 1px solid #ffffff; 
+
 }
 
 /* fa = font-awesome */
@@ -286,7 +291,8 @@ nav {
 
 .fa:hover, .ai:hover {
   opacity: 0.7;
-  color: #555555;
+  color: #281FB4; /* Set the color you want on hover */
+  filter: invert(100%);
 }
 
 .spacer {
@@ -407,8 +413,8 @@ nav {
  }
  
  .video {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 1px;
   padding: 5px;
   width: 100%;
  }
