@@ -3,7 +3,7 @@
   color: rgb(255, 255, 255);
 
   --hover-color: #ffffff;
-  --site-margin: 0 1em;
+  --site-margin: 0 2em;
   --site-max-width: 1024px;
   --secondary-color: #D7E04B ;
 }
@@ -103,7 +103,7 @@ nav {
 }
 
 .logo img {
-  width: 50px; 
+  width: 80px; 
   height: auto;
 }
 
@@ -238,12 +238,17 @@ nav {
 .intro-main {
   grid-area: intro-main;
   text-align: var(--header-text-align);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid #ffffff; 
+  border: 1px solid #000000; 
+  transition: border 0.3s; /* Adding a smooth transition for a better user experience */
 }
+
+.intro-main:hover {
+  border: 1px solid #ffffff; /* Change border color on hover */
+}
+
 
 .intro-main h1 {
   display: block;
@@ -270,9 +275,17 @@ nav {
   display: var(--email-display);
   margin-top: 1em;
   font-size: 1rem;
-  font-family: monospace;
-  border: 1px solid #ffffff; 
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #000000;
+  transition: border 0.3s; /* Adding a smooth transition for a better user experience */
+}
+.intro-main .email a {
+  color: inherit; /* Inherit the color from the parent element (.email) */
+  text-decoration: none; /* Remove underline from the link */
+}
 
+.intro-main .email:hover {
+  border: 1px solid #ffffff; /* Change border color on hover */
 }
 
 /* fa = font-awesome */
