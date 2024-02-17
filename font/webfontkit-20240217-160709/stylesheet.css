@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'nohemimedium';
+    src: url('https://natew.xyz//font/webnohemi-medium-webfontkit-20240217-160709.woff2') format('woff2'),
+         url('nohemi-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

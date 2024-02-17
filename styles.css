@@ -314,8 +314,6 @@ nav {
 .bio-side {
   grid-area: bio-side;
   font-family: 'Snell Roundhand', sans-serif;
-  text-decoration: underline;
-
 }
 
 .bio-side {
@@ -329,8 +327,6 @@ nav {
 .news-side {
   grid-area: news-side;
   font-family: 'Snell Roundhand'; 
-  text-decoration: underline;
-
 }
 
 .news-side {
@@ -352,8 +348,6 @@ nav {
 .preprints-side {
   grid-area: preprints-side;
   font-family: 'Snell Roundhand', sans-serif; 
-  text-decoration: underline;
-
 }
 .preprints-side {
   grid-area: preprints-side;
@@ -382,7 +376,6 @@ nav {
 .papers-side {
   grid-area: papers-side;
   font-family: 'Snell Roundhand', sans-serif; 
-  text-decoration: underline;
 }
 
 .papers-side {
