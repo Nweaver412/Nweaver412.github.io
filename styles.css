@@ -118,12 +118,11 @@ nav {
       "bio-main"
       "news-side"
       "news-main"
-      "preprints-side"
-      "preprints-main"
-      "papers-side"
-      "papers-main"
-      "service-side"
-      "service-main";
+      "projects-side"
+      "projects-main"
+      "videos-side"
+      "videos-main";
+
   --grid-gap: 1em;
 
   --main-wrapper-margin: 0;
@@ -149,9 +148,9 @@ nav {
         "spacer spacer"
         "bio-side bio-main"
         "news-side news-main"
-        "preprints-side preprints-main"
-        "papers-side papers-main"
-        "service-side service-main";
+        "projects-side projects-main"
+        "videos-side videos-main";
+        
     --grid-gap: 1.5em 3em;
 
     --main-wrapper-margin: 0 0 0em 0;
@@ -341,80 +340,64 @@ nav {
 .news-main li + li {
   margin-top: 0.25em;
 }
-.preprints-side {
-  grid-area: preprints-side;
+.projects-side {
+  grid-area: projects-side;
   font-family: 'Snell Roundhand', sans-serif; 
 }
-.preprints-side {
-  grid-area: preprints-side;
+.projects-side {
+  grid-area: projects-side;
 }
 
-.preprints-main {
-  grid-area: preprints-main;
+.projects-main {
+  grid-area: projects-main;
 }
 
-.preprints-main ul {
+.projects-main ul {
   padding: 0;
   list-style: none;
 }
 
-.preprints-main li + li {
+.projects-main li + li {
   margin-top: 1.5rem;
 }
 
-.preprints-main li > span {
+.projects-main li > span {
   display: block;
 }
 
-.preprints-main li > span.aside {
+.projects-main li > span.aside {
   font-size: 0.85rem;
 }
-.papers-side {
-  grid-area: papers-side;
+.videos-side {
+  grid-area: videos-side;
   font-family: 'Snell Roundhand', sans-serif; 
 }
 
-.papers-side {
-  grid-area: papers-side;
+.videos-side {
+  grid-area: videos-side;
 }
 
-.papers-main {
-  grid-area: papers-main;
+.videos-main {
+  grid-area: videos-main;
 }
 
-.papers-main ul {
+.videos-main ul {
   padding: 0;
   list-style: none;
 }
 
-.papers-main li + li {
+.videos-main li + li {
   margin-top: 1.5rem;
 }
 
-.papers-main li > span {
+.videos-main li > span {
   display: block;
 }
 
-.papers-main li > span.aside {
+.videos-main li > span.aside {
   font-size: 0.85rem;
 }
 
-.service-side {
-  grid-area: service-side;
-}
-
-.service-main {
-  grid-area: service-main;
-}
-
-.service-main ul {
-  padding: 0;
-  list-style: none;
-}
-
-.service-main li + li {
-  margin-top: 0.25em;
-}
 
 .grid {
   display: grid;
