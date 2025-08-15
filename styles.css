@@ -505,7 +505,6 @@ nav {
   
   .bio-side h2::before {
     content: "About";
-    font-size: 5rem;
   }
   
   .news-side h2 {
@@ -514,7 +513,14 @@ nav {
   
   .news-side h2::before {
     content: "News";
-    font-size: 5rem;
+  }
+  
+  .projects-side h2::before {
+    content: "Projects";
+  }
+  
+  .videos-side h2::before {
+    content: "Videos";
   }
   
   .bio-side h2,
@@ -522,6 +528,16 @@ nav {
   .projects-side h2,
   .videos-side h2 {
     margin-top: 2rem;
+  }
+  
+  .bio-side h2::before,
+  .news-side h2::before,
+  .projects-side h2::before,
+  .videos-side h2::before {
+    font-size: var(--header-font-size);
+    letter-spacing: -0.055em;
+    line-height: 0.9em;
+    text-indent: var(--header-text-indent);
   }
 }
 
