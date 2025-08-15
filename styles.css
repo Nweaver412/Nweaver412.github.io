@@ -469,9 +469,63 @@ nav {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
- }
+  
+  .projects-side h2 br,
+  .videos-side h2 br {
+    display: none;
+  }
+  
+  .projects-side h2,
+  .videos-side h2 {
+    font-size: 2.5rem;
+    line-height: 1.2em;
+  }
+  
+  .projects-side h2 {
+    font-size: 0;
+  }
+  
+  .projects-side h2::before {
+    content: "Projects";
+    font-size: 5rem;
+  }
+  
+  .videos-side h2 {
+    font-size: 0;
+  }
+  
+  .videos-side h2::before {
+    content: "Videos";
+    font-size: 5rem;
+  }
+  
+  .bio-side h2 {
+    font-size: 0;
+  }
+  
+  .bio-side h2::before {
+    content: "About";
+    font-size: 5rem;
+  }
+  
+  .news-side h2 {
+    font-size: 0;
+  }
+  
+  .news-side h2::before {
+    content: "News";
+    font-size: 5rem;
+  }
+  
+  .bio-side h2,
+  .news-side h2,
+  .projects-side h2,
+  .videos-side h2 {
+    margin-top: 2rem;
+  }
+}
 
- footer {
+footer {
   background-color: #000000;
   color: #D7E04B;
   text-align: center;
