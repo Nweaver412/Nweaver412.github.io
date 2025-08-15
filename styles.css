@@ -308,11 +308,23 @@ nav {
 }
 .bio-side {
   grid-area: bio-side;
-  font-family: 'Snell Roundhand', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.055em;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-.bio-side {
-  grid-area: bio-side;
+.bio-side h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1em;
+  margin: 0;
 }
 
 .bio-main {
@@ -321,11 +333,23 @@ nav {
 
 .news-side {
   grid-area: news-side;
-  font-family: 'Snell Roundhand'; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.055em;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto; 
 }
 
-.news-side {
-  grid-area: news-side;
+.news-side h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1em;
+  margin: 0;
 }
 
 .news-main {
@@ -342,10 +366,22 @@ nav {
 }
 .projects-side {
   grid-area: projects-side;
-  font-family: 'Snell Roundhand', sans-serif; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.055em;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
-.projects-side {
-  grid-area: projects-side;
+.projects-side h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1em;
+  margin: 0;
 }
 
 .projects-main {
@@ -370,11 +406,23 @@ nav {
 }
 .videos-side {
   grid-area: videos-side;
-  font-family: 'Snell Roundhand', sans-serif; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.055em;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-.videos-side {
-  grid-area: videos-side;
+.videos-side h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1em;
+  margin: 0;
 }
 
 .videos-main {
